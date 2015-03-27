@@ -1,0 +1,80 @@
+<ion-view view-title="Dashboard" >
+    <ion-content class="padding" >
+        <div class="list card">
+            <div class="item item-divider">
+                <div class=" h4 ">
+                Notifications
+                </div>
+            </div>
+            <div class="item item-body">
+                <div>
+                   You have 0 unread messages in the Social Chat
+                </div>
+            </div>
+            <div class="item item-body">
+                <div>
+                   You have 5 unread messages in the Educational Chat
+                </div>
+            </div>
+        </div>
+
+        <div class="list card">
+            <div class="item item-divider">
+                <div class=" h4 ">
+                User Data
+                </div>
+            </div>
+            <div class="item item-body">
+                <div>
+
+                    <div has-header="true" padding="true" ng-show="myUser.password.email != undefined">
+                        <div class="list card energized-border">
+                            <div class="item item-divider ">
+                                Email
+                            </div>
+                            <div class="item item-text-wrap">
+                                {{ myUser.password.email }}
+                            </div>
+                        </div>
+                        <div class="list card">
+                            <div class="item item-divider">
+                                firebaseAuthToken
+                            </div>
+                            <div class="item item-text-wrap">
+                                {{ myUser.token }}
+                            </div>
+                        </div>
+                        <div class="list card">
+                            <div class="item item-divider">
+                                id
+                            </div>
+                            <div class="item item-text-wrap">
+                                {{ myUser.uid }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div has-header="true" padding="true" class="vcenter" ng-show="myUser.password.email == undefined">
+
+                        <div class="row">
+                            <div class="col">
+                                <a class="button button-block button-outline button-energized" ng-click="getdata()">
+                                    Get My data
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a class="button button-block  button-outline button-energized" ng-href="#/tab/account">
+                                    Go to Login
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+
+</ion-view>

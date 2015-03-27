@@ -1,0 +1,106 @@
+/* Empty. Add your own CSS if you like */
+
+.chat {
+    font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #dfe3ea;
+    border: 1px solid #CCC;
+    overflow: auto;
+    padding: 0px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #666; }
+.chat header {
+    background-color: #EEE;
+    background: -webkit-gradient(linear, left top, left bottom, from(#EEEEEE), to(#DDDDDD));
+    background: -webkit-linear-gradient(top, #EEEEEE, #DDDDDD);
+    background: linear-gradient(top, #EEEEEE, #DDDDDD);
+    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.9), 0px 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.9), 0px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 3px 3px 0px 0px;
+    border-bottom: 1px solid #CCC;
+    line-height: 24px;
+    font-size: 12px;
+    text-align: center;
+    color: #999; }
+.chat input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    padding: 0px 10px;
+    font-size: 18px;
+    font-weight: normal;
+    outline: none; }
+.chat .chat-toolbar {
+    background-color: #FFF;
+    padding: 10px;
+    position: relative;
+    border-bottom: 1px solid #CCC; }
+.chat .chat-toolbar label {
+    text-transform: uppercase;
+    line-height: 32px;
+    font-size: 14px;
+    color: #999;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    z-index: 1; }
+.chat .chat-toolbar input {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #FFF;
+    padding-left: 100px;
+    color: #999; }
+.chat .chat-toolbar input:active, .chat .chat-toolbar input:focus {
+    color: #ffc900;
+    border: 1px solid #FFF; }
+.chat ul {
+    list-style: none;
+    margin: 0px;
+    padding: 20px;
+    height: 400px;
+    overflow: auto;
+}
+
+/*.fbNub{
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}*/
+
+/*#bottom {
+    display: block;
+}*/
+
+.chat ul li {
+    margin-bottom: 10px;
+    line-height: 24px; }
+.chat ul li:last-child {
+    margin: 0px; }
+.chat ul .chat-username {
+    color: #ffc900;
+    margin-right: 10px;
+}
+
+
+.sendButton{
+    height: 34px;
+    width: 35px;
+    padding: 0px 0 0px 0px;
+
+}
+
+.sendInput{
+    padding: 0px 0 0px 0px;
+}
+
+ion-content{
+border-bottom: 1px solid #ffc900;
+}
+
+

@@ -1,0 +1,3 @@
+local Storage firebase data
+
+this.localStorage.getItem('firebase:session::emessage')

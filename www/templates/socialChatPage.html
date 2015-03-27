@@ -1,0 +1,27 @@
+<ion-view view-title="Social Chats">
+  <ion-content>
+      <div class='chat' style="margin-top: 0;">
+        <header>Group Chat</header>
+
+        <div class='chat-toolbar'>
+          <label for='nameInput'>Username:</label>
+          <input ng-model='user.password.email' type='text' id='nameInput' placeholder='enter a username...'>
+        </div>
+
+        <ul id='messages' scroll-glue>
+          <li ng-repeat='message in messages'>
+            <span class='chat-username'>{{message.user}}:</span>
+            {{message.text}}
+          </li>
+        </ul>
+        <div class="item item-input sendInput" >
+          <input type='text' ng-model="msg.text" placeholder='  Type a message...'>
+          <button ng-click="send()" class="button button-small icon ion-paper-airplane energized sendButton" ></button>
+        </div>
+
+        <footer>
+
+        </footer>
+      </div>
+  </ion-content>
+</ion-view>
